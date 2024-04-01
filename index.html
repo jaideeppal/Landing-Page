@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaideep TravelHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-image">
+    <div class="navbar">
+      <div class="navbar-brand">Jaideep TravelHub</div>
+      <ul class="nav-links">
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#" class="login-btn" id="loginBtn">Register / Login</a></li>        
+      </ul>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+      <button class="search-btn" onclick="search()">Search</button>
+    </div>
+  </div>
+
+  <script>
+    function search() {
+      var searchQuery = document.getElementById('searchInput').value;
+      // Redirect to the desired URL
+      window.location.href = 'https://github.com/jaideeppal/Landing-Page?q=' + encodeURIComponent(searchQuery);
+    }
+  </script>
+</body>
+</html>
